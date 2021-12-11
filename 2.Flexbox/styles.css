@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Indie Flower', cursive;
+    background: rgb(0, 0, 0) url('Imágenes/fotoParrilla.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contenedor {
+    margin: auto;
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+header {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .logo {
+    width: 150px;
+    height: 150px;
+}
+
+header .menu a {
+    color: white;
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 20px;
+}
+ header .menu a:hover {
+    text-decoration: underline;    
+
+}
+
+.main {
+    background: white;
+    padding: 20px;
+    width: 70%;
+}
+.main article .parilla {
+    margin-bottom: 20px;
+}
+.main article .parilla img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.main article h2 {
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 30px;
+}
+.main article p {
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 27px
+    ;
+}
+aside {
+    width: 30%;
+    background: rgb(204, 132, 37);
+    padding: 20px;
+/*    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;*/
+}
+aside .sobreNosotros h3{
+    font-size: 20px;
+    text-align:center;
+}
+aside .sobreNosotros {
+    margin-bottom: 20px;
+    background: rgb(202, 165, 117);
+}
+
+footer {
+    margin: 20px 0px;
+    background-color: rgba(255,255,255, .2);
+    padding: 20px;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    
+}
+footer .redes-sociales a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+footer .redes-sociales a:hover {
+    background-color: rgb(153, 152, 149);
+    color: black;
+}
+@media screen and (max-width:800px){
+    .main {
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+        flex-direction: row;
+    }
+    aside .sobreNosotros {
+        width: 40%;
+    }
+}
+@media screen and (max-width:600px){
+    header {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+     header .menu {
+         width: 100%;
+         background: rgba(255,255,255, .2);
+         text-align: center;
+         padding: 20px;
+     }
+     header .menu a {
+         margin: 0 20px;
+     }
+     header .logo {
+       margin-bottom: 20px;
+     }
+     footer {
+         flex-direction: column;
+         text-align: center;
+     }
+     footer .autor {
+         order: 2;
+     }
+     footeer .redes-sociales{
+         order: 1;
+         margin-bottom: 2opx;
+     }
+}
+
+@media screen and (max-width:400px){
+    aside {
+        display: none;
+    }
+
+}
